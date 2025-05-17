@@ -37,14 +37,17 @@ New-AzureADUser -DisplayName "John Doe" `
                 -AccountEnabled $true `
                 -PasswordProfile @{ Password = "P@ssword123"; ForceChangePasswordNextLogin = $true } `
                 -MailNickname "johndoe"
+```
+
+---
 
 ## Step 3: Create a New Group in Azure Portal
 
-1. Sign in to the [Azure Portal](https://portal.azure.com).
-2. Navigate to **Azure Active Directory** > **Groups**.
-3. Click **+ New group**.
-4. Select the **Group type** (Security or Microsoft 365).
-5. Enter a **Group name** and **Description**.
+1. In the [Azure Portal](https://portal.azure.com), navigate to **Azure Active Directory** > **Groups**.
+2. Click **+ New group**.
+3. Select the **Group type** (Security or Microsoft 365).
+4. Provide a **Group name** and optional **Description**.
+5. Optionally assign an owner and members.
 6. Click **Create**.
 
 ![Create New Group](images/group-management-step1.png)
@@ -57,6 +60,16 @@ New-AzureADUser -DisplayName "John Doe" `
 # Connect to Azure AD
 Connect-AzureAD
 
-# Add user to a group
+# Add a user to a group
 Add-AzureADGroupMember -ObjectId <GroupObjectId> -RefObjectId <UserObjectId>
+```
 
+> 🔎 **Tip**: Use `Get-AzureADUser` and `Get-AzureADGroup` to retrieve the required Object IDs.
+
+---
+
+## Next Steps
+
+- Assign licenses via group membership.
+- Explore dynamic group membership rules.
+- Review audit logs for user and group activities.
