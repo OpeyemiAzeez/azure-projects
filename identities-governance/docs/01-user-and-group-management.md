@@ -38,7 +38,7 @@ New-AzureADUser -DisplayName "John Doe" `
                 -PasswordProfile @{ Password = "P@ssword123"; ForceChangePasswordNextLogin = $true } `
                 -MailNickname "johndoe"
 
-![Create New User in Powershell](images/user-management-ps.png)
+![Create New User in PowerShell](images/user-management-ps.png)
 
 ![Create New User in Powershell - Result](images/user-management-psresult.png)
 ```
