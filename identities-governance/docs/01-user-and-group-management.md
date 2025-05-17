@@ -66,8 +66,7 @@ Connect-AzureAD
 # Add a user to a group
 Add-AzureADGroupMember -ObjectId <GroupObjectId> -RefObjectId <UserObjectId>
 ```
-
-> 🔎 **Tip**: Use `Get-AzureADUser` and `Get-AzureADGroup` to retrieve the required Object IDs.
+![Create New Group in Powershell](images/group-management-ps.png)
 
 ---
 
