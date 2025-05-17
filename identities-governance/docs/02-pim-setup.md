@@ -1,7 +1,7 @@
 # Priviledged Identity Management (PIM) Setup
 
 ## Objective
-This section covers how to create and manage users and groups in Azure Active Directory (Entra ID) to control access and permissions.
+This section walks you through enabling Azure AD Privileged Identity Management (PIM), assigning eligible roles, activating roles, and setting up approval workflows to manage privileged access securely.
 
 ---
 
