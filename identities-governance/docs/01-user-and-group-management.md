@@ -32,11 +32,11 @@ This section covers how to create and manage users and groups in Azure Active Di
 Connect-AzureAD
 
 # Create a new user with password profile
-New-AzureADUser -DisplayName "John Doe" `
-                -UserPrincipalName "john.doe@example.com" `
+New-AzureADUser -DisplayName "Phil Perez" `
+                -UserPrincipalName "phil.perez@cloudprimeservices.com" `
                 -AccountEnabled $true `
                 -PasswordProfile @{ Password = "P@ssword123"; ForceChangePasswordNextLogin = $true } `
-                -MailNickname "johndoe"
+                -MailNickname "PP"
 
 ```
 ![Create New User in PowerShell](images/user-management-ps.png)
