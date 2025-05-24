@@ -1,4 +1,4 @@
-# Azure Projects – AZ-104 Hands-On Journey
+# Azure Projects – AZ-104
 
 This repo documents my hands-on learning path to mastering Azure administration through real-world projects.
 
