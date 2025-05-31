@@ -30,6 +30,8 @@ Navigate to the following sections to configure policies:
    - **User risk**: Set to `High`.
    - **Access**: Choose **Block access**.
 
+![User Risk Policy](images/user-risky-policy.png)
+
 ### 🔹 Sign-in Risk Policy
 
 1. Select **Sign-in risk policy**.
@@ -37,6 +39,8 @@ Navigate to the following sections to configure policies:
    - **Sign-in risk level**: Medium and above.
    - **Grant**: Require multi-factor authentication (MFA).
    - Enable the policy.
+
+![Sign-in Risk Policy](images/signin-risk-policy.png)
 
 ---
 
@@ -55,17 +59,5 @@ Navigate to the following sections to configure policies:
    - Investigate the risk level.
    - Confirm compromise or dismiss the alert.
    - Take remediation actions (e.g., reset password, block sign-in).
-     
----
-
-## 📸 Screenshots
-
-> Add these images to your `images/` folder.
-
-![Identity Protection Overview](images/identity-protection-overview.png)
-
-![User Risk Policy](images/user-risk-policy.png)
-
-![Sign-in Risk Policy](images/signin-risk-policy.png)
 
 ---
