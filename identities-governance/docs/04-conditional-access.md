@@ -27,36 +27,17 @@ This section outlines the steps to configure Conditional Access (CA) policies to
 
 1. Under **Assignments > Cloud apps or actions**, choose:
    - **Select apps** → Pick apps like `Microsoft Office 365` or `All cloud apps`.
-
-## Step 6: Set Conditions (Optional)
-
-- You can define conditions like:
-  - **Sign-in risk**
-  - **Device platform**
-  - **Locations**
-
-## Step 7: Grant Controls
+     
+## Step 6: Grant Controls
 
 1. Under **Access controls > Grant**, select:
    - ✅ **Require multi-factor authentication**
 2. Click **Select**.
 
-## Step 8: Enable and Create Policy
+## Step 7: Enable and Create Policy
 
 1. Under **Enable policy**, set it to **On**.
 2. Click **Create**.
-
-## ✅ Result
-
-Once created, the Conditional Access policy will enforce MFA or other rules for users trying to access defined apps or services.
-
----
-
-## 🔒 Best Practices
-
-- Test with a small group before wide rollout.
-- Use **report-only mode** to simulate effects.
-- Combine CA with Identity Protection (if licensed).
 
 ---
 
