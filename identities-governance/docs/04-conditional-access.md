@@ -23,26 +23,32 @@ This section outlines the steps to configure Conditional Access (CA) policies to
 1. Under **Assignments > Users**, click **Select users and groups**.
 2. Choose specific users or a group (e.g., `Admins`).
 
+![Create Conditional Access Policy](images/assign-users.png)
+
+
 ## Step 5: Configure Cloud Apps or Actions
 
 1. Under **Assignments > Cloud apps or actions**, choose:
    - **Select apps** → Pick apps like `Microsoft Office 365` or `All cloud apps`.
-     
+
+![Create Conditional Access Policy](images/setup-cloudapps.png)
+
 ## Step 6: Grant Controls
 
 1. Under **Access controls > Grant**, select:
    - ✅ **Require multi-factor authentication**
 2. Click **Select**.
 
+![Create Conditional Access Policy](images/grant.png)
+
+
+![Create Conditional Access Policy](images/grant3.png)
+
 ## Step 7: Enable and Create Policy
 
 1. Under **Enable policy**, set it to **On**.
 2. Click **Create**.
 
+![Create Conditional Access Policy](images/enable-mfa.png)
+
 ---
-
-## 📸 Screenshots
-
-![Create Conditional Access Policy](images/conditional-access-policy.png)
-
-![Grant MFA Requirement](images/conditional-access-mfa.png)
