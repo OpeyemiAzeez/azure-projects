@@ -1,4 +1,4 @@
-Configure Conditional Access Policies
+## Configure Conditional Access Policies
 
 ## Objective
 This section outlines the steps to configure Conditional Access (CA) policies to enforce secure access to Azure resources.
