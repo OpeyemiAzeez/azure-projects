@@ -30,6 +30,9 @@ This section walks you through enabling Azure AD Privileged Identity Management 
 4.	Choose Eligible, select the user, and specify a start and end time if needed.
 Click Assign.
 
+
+
+![Assign an Eligible Rolel](images/assign-an-eligible-role-pim.png)
 ---
 
 ## Step 3: Activate a Role
@@ -40,6 +43,11 @@ Click Assign.
 4.	Optionally provide a reason and MFA confirmation.
 5.	Click Activate again.
 
+
+
+![Activate a Role](images/activate-a-role.png)
+
+![Activate a Role](images/active-assignments.png)
 ---
 
 ## Step 4: Require Approval for Role Activiation
@@ -51,4 +59,6 @@ Click Assign.
 5.	Set duration and other settings.
 6.	Click Update.
 
+
+![Approval](images/approval-for-role-activation.png)
 ---
