@@ -39,6 +39,9 @@ This section explains how to configure and manage Access Reviews in Azure Active
 7.	Configure Auto-apply results (e.g., remove access if not approved).
 8.	Click Create.
 
+
+
+![Access Review](images/access-review.png)
 ---
 
 ## Step 3: Monitor and Take Action on Reviews
