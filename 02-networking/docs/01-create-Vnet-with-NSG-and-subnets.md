@@ -31,6 +31,10 @@ In this section, we'll learn how to create a Virtual Network (VNet), define mult
 3. Under **Subnets**, create:
    - `web-subnet`: `10.1.1.0/24`
    - `db-subnet`: `10.1.2.0/24`
+  
+![VNet Portal](../images/myVnet.png)
+
+
 4. Create a **Network Security Group**:
    - Name: `web-nsg`
    - Add inbound rule:
@@ -39,8 +43,11 @@ In this section, we'll learn how to create a Virtual Network (VNet), define mult
      - Action: `Allow`
 5. Associate `web-nsg` with `web-subnet`
 
-![VNet Portal](../images/vnet-portal-create.png)
-![NSG Portal](../images/nsg-portal-config.png)
+
+![VNet Portal](../images/web-nsg.png)
+
+
+![NSG Portal](../images/web-nsg2.png)
 
 ---
 
