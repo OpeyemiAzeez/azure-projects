@@ -2,13 +2,13 @@
 
 ## 🎯 Objective
 
-Enable secure remote access to your Azure virtual network using a **VPN Gateway** with **Point-to-Site (P2S)** configuration. This is essential for administrators or remote users to securely access resources inside the network without needing a jump box or bastion.
+Enable secure remote access to your Azure virtual network using a **VPN Gateway** with **Point-to-Site (P2S)** configuration.
 
 ---
 
 ## 🧭 Requirements
 
-- Existing **Virtual Network (VNet)** in Azure (e.g., `hub-vnet`)
+- Existing **Virtual Network (VNet)** in Azure
 - Address space large enough for the **GatewaySubnet**
 - A **GatewaySubnet** (must be named exactly this)
 - VPN Gateway (route-based)
@@ -22,10 +22,12 @@ Enable secure remote access to your Azure virtual network using a **VPN Gateway*
 
 ### 1. Create GatewaySubnet
 
-1. Go to your VNet (e.g., `hub-vnet`)
+1. Go to your VNet
 2. Under **Subnets**, click **+ Gateway subnet**
-3. Use address range (e.g. `10.0.255.0/27`)  
+3. Use address range (`10.0.255.0/27`)  
 4. Click **OK**
+
+![VNet Portal](../images/myVnet.png)
 
 ---
 
@@ -45,6 +47,7 @@ Enable secure remote access to your Azure virtual network using a **VPN Gateway*
 
 > 🕒 May take up to 30 minutes to deploy.
 
+![VNet Portal](../images/myVnet.png)
 ---
 
 ### 3. Configure Point-to-Site (P2S) VPN
@@ -59,39 +62,8 @@ Enable secure remote access to your Azure virtual network using a **VPN Gateway*
 4. Save configuration  
 5. Download **VPN client** after configuration is complete
 
+![VNet Portal](../images/myVnet.png)
 ---
 
 ## ⚡ Azure CLI Steps
 
-```bash
-# Variables
-rg="rg-networking"
-location="eastus"
-vnetName="hub-vnet"
-gwSubnetPrefix="10.0.255.0/27"
-gwName="hub-vpn-gateway"
-gwPublicIP="hub-vpn-ip"
-
-# Create Gateway Subnet
-az network vnet subnet create \
-  --name GatewaySubnet \
-  --resource-group $rg \
-  --vnet-name $vnetName \
-  --address-prefix $gwSubnetPrefix
-
-# Create Public IP
-az network public-ip create \
-  --name $gwPublicIP \
-  --resource-group $rg \
-  --allocation-method Dynamic
-
-# Create VPN Gateway
-az network vnet-gateway create \
-  --name $gwName \
-  --public-ip-address $gwPublicIP \
-  --resource-group $rg \
-  --vnet $vnetName \
-  --gateway-type Vpn \
-  --vpn-type RouteBased \
-  --sku VpnGw1 \
-  --no-wait
