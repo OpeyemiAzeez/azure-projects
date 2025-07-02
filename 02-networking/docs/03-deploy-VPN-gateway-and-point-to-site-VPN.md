@@ -27,7 +27,7 @@ Enable secure remote access to your Azure virtual network using a **VPN Gateway*
 3. Use address range (`10.0.255.0/27`)  
 4. Click **OK**
 
-![VNet Portal](../images/myVnet.png)
+![VNet Portal](../images/gatewaysubnet.png)
 
 ---
 
@@ -39,7 +39,7 @@ Enable secure remote access to your Azure virtual network using a **VPN Gateway*
    - Region: same as VNet
    - Gateway type: `VPN`
    - VPN type: `Route-based`
-   - SKU: `VpnGw1` (or `Basic` for lab/demo)
+   - SKU: `VpnGw1` 
    - Virtual Network: Select `hub-vnet`
    - Public IP: Create new `hub-vpn-ip`
 
@@ -47,7 +47,7 @@ Enable secure remote access to your Azure virtual network using a **VPN Gateway*
 
 > 🕒 May take up to 30 minutes to deploy.
 
-![VNet Portal](../images/myVnet.png)
+![VNet Portal](../images/vpn-gateway.png)
 ---
 
 ### 3. Configure Point-to-Site (P2S) VPN
@@ -56,13 +56,13 @@ Enable secure remote access to your Azure virtual network using a **VPN Gateway*
 2. Click **Point-to-site configuration > Configure now**
 3. Enter:
    - Address pool: `172.16.0.0/24` (for P2S clients)
-   - Tunnel type: IKEv2 + SSTP (or OpenVPN)
-   - Auth type: Azure certificate (upload root cert)
+   - Tunnel type: OpenVPN for AAD authentication
+   - Auth type: Azure Active Directory
 
 4. Save configuration  
 5. Download **VPN client** after configuration is complete
 
-![VNet Portal](../images/myVnet.png)
+![VNet Portal](../images/point-to-site.png)
 ---
 
 ## ⚡ Azure CLI Steps
