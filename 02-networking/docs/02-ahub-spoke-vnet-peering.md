@@ -2,7 +2,7 @@
 
 ## 🧭 Scenario
 
-You're tasked with building the foundation for a secure hub-and-spoke Azure network architecture for a web-based application. This involves creating two VNets, configuring subnets, and setting up VNet peering to enable secure communication.
+This involves creating two VNets, configuring subnets, and setting up VNet peering to enable secure communication.
 
 ---
 
